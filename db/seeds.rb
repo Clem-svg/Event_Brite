@@ -10,10 +10,10 @@ require 'faker'
 5.times do
 
   User.create!(
-    email: (Faker::Name.name + "yopmail.com"),
+    email: ("filou78@yopmail.com"),
     encrypted_password: "azerty",
     description: Faker::GreekPhilosophers.quote,
-    first_name: Faker::GreekPhilosophers.name,
+    first_name: "Faker::GreekPhilosophers.name",
     last_name: Faker::Hipster.word
   )
 
