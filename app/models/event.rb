@@ -1,14 +1,16 @@
 class Event < ApplicationRecord
 
-  has_many :users, through: :attendances
+
   has_many :attendances
-  belongs_to :user
+  has_many :users, through: :attendances
   belongs_to :event_admin, class_name: "User"
 
 
   validates :start_date, presence: true, inclusion: { in: (Date.today..Date.today+5.years) }
-  validates :duration, presence: true
+
   validate :only_valid_duration
+  validates :duration, presence: true
+
   validates :title, presence: true, length: { in: 5..40 }
   validates :description, presence: true, length: { in: 20..1000 }
   validates :price, presence: true, :inclusion => 1..1000

@@ -11,8 +11,6 @@ class CreateEvents < ActiveRecord::Migration[6.0]
 
       t.references :event_admin, index: true
 
-      t.belongs_to :user, index: true
-
       t.timestamps
     end
   end

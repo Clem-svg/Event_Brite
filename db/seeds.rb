@@ -28,7 +28,8 @@ end
 #     title: Faker::Food.dish,
 #     description: Faker::Food.description,
 #     price: Faker::Number.between(from: 1, to: 1000),
-#     location: Faker::Address.street_address
+#     location: Faker::Address.street_address,
+#     event_admin: User.all.sample
 #     )
 
 
@@ -39,8 +40,7 @@ end
 #   Attendance.create!(
 #     stripe_customer_id: Faker::Stripe.valid_card,
 #     user: User.all.sample,
-#     event: Event.all.sample,
-#     event_admin: User.all.sample
+#     event: Event.all.sample
 #   )
 
 # end
