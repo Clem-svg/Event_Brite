@@ -20,27 +20,27 @@ require 'faker'
 end
 
 
-# 3.times do
+3.times do
 
-#   Event.create!(
-#     start_date: Faker::Date.between(from: Date.today, to: 1.year.from_now),
-#     duration: [30, 45,60,90,120].sample,
-#     title: Faker::Food.dish,
-#     description: Faker::Food.description,
-#     price: Faker::Number.between(from: 1, to: 1000),
-#     location: Faker::Address.street_address,
-#     event_admin: User.all.sample
-#     )
+  Event.create!(
+    start_date: Faker::Date.between(from: Date.today, to: 1.year.from_now),
+    duration: [30, 45,60,90,120].sample,
+    title: Faker::Food.dish,
+    description: Faker::Food.description,
+    price: Faker::Number.between(from: 1, to: 1000),
+    location: Faker::Address.street_address,
+    event_admin: User.all.sample
+    )
 
 
-# end
+end
 
-# 10.times do
+10.times do
 
-#   Attendance.create!(
-#     stripe_customer_id: Faker::Stripe.valid_card,
-#     user: User.all.sample,
-#     event: Event.all.sample
-#   )
+  Attendance.create!(
+    stripe_customer_id: Faker::Stripe.valid_card,
+    user: User.all.sample,
+    event: Event.all.sample
+  )
 
-# end
+end
