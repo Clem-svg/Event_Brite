@@ -13,7 +13,7 @@ require 'faker'
     email: ("filou78@yopmail.com"),
     encrypted_password: "azerty",
     description: Faker::GreekPhilosophers.quote,
-    first_name: "Faker::GreekPhilosophers.name",
+    first_name: Faker::GreekPhilosophers.name,
     last_name: Faker::Hipster.word
   )
 
