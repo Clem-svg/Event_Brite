@@ -1,7 +1,8 @@
-# Event Brite 2.0
+# Event Brite 2.0 🎈
 
 ![](https://images.unsplash.com/photo-1520095972714-909e91b038e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80)
 
+## C'est quoi Event Brite 2.0 ?
 Cette application est une version minimaliste (mais fonctionnelle, c'est le plus important) d'Eventbrite, un site qui propose plein d'événements que tu peux rejoindre. 
 Les événements ne concernent qu'une seule ville, la ville où tu te trouves. Voici ce que tu peux faire :
 
@@ -22,13 +23,13 @@ Les événements ne concernent qu'une seule ville, la ville où tu te trouves. V
 * Actions impossibles à faire si la personne n'est pas connectée : rejoindre un événement, créer un événement, accéder à la page "mon profil"
 
 ## Lancer l'app :
-$ git clone
-$ bundle install
-$ (yarn install --check-files) optionnel
-$ rails db:create
-$ rails db:migrate
-$ rails db:seed
-$ rails s
+* $ git clone
+* $ bundle install
+* $ (yarn install --check-files) optionnel
+* $ rails db:create
+* $ rails db:migrate
+* $ rails db:seed
+* $ rails s
 
 Tu peux maintenant lancer http://localhost:3000/ dans ton nativagteur. 
 
